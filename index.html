@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Trivia</title>
+</head>
+<body>
+    <section class="mainSection">
+        <div class="container">
+            <div class="wrapper">
+                <h1 class="title">Trivialogy</h1>
+                <p class="subtitle">Use the below form to build and customize your questions. Have fun!</p>
+                <form id="triviaForm">
+                    <div class="inputDiv">
+                        <label for="question" class="label">Choose the number of questions</label>
+                        <input type="number" id="numberQuestions" class="input" value="1">
+                    </div>
+                    <div class="inputDiv">
+                        <label for="question" class="label">Choose the category</label>
+                        <select name="" class="inputSelect" id="category">
+                            <option value="0">Any Category</option>
+                            <option value="9">General Knowledge</option>
+                            <option value="10">Books</option>
+                            <option value="11">Movies</option>
+                            <option value="12">Music</option>
+                            <option value="13">Musicals and Theather</option>
+                            <option value="14">Television</option>
+                            <option value="15">Videogames</option>
+                            <option value="16">Board games</option>
+                            <option value="17">Science and Nature</option>
+                            <option value="18">Computers</option>
+                            <option value="19">Math</option>
+                            <option value="20">Mithology</option>
+                            <option value="21">Sports</option>
+                            <option value="22">Geography</option>
+                            <option value="23">History</option>
+                            <option value="24">Politics</option>
+                            <option value="25">Arts</option>
+                            <option value="26">Celebreties</option>
+                            <option value="27">Animals</option>
+                            <option value="28">Cars</option>
+                            <option value="29">Comics</option>
+                            <option value="30">Gadgets</option>
+                            <option value="31">Anime and Manga</option>
+                            <option value="32">Cartoons</option>
+                          </select>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="question" class="label">Select difficulty</label>
+                        <select name="" class="inputSelect" id="difficulty">
+                            <option value="0">Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="type" class="label">Select Type</label>
+                        <select name="" class="inputSelect" id="type">
+                            <option value="0">Any Type</option>
+                            <option value="multiple">Multiple Choice</option>
+                            <option value="boolean">True / False</option>
+                        </select>
+                    </div>
+                    <button id="generate">Generate</button>
+                </form>
+            </div>
+        </div>
+        <div id="questionContainer"></div>
+    </section>
+    <script src="trivia.js"></script>
+</body>
+</html>
